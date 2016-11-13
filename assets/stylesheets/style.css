@@ -43,13 +43,15 @@
     padding-top: 90px;
     z-index: 1;
     background-image: url("../images/cov1_3r.jpg");
-    background-size: cover; }
+    /*background-size: cover;*/
+    background-size: auto; }
     .site-wrapper .hero .hero_story {
       width: 768px;
       margin: 0 auto;
       color: white;
       font-family: 'Roboto'; }
   .site-wrapper .dummy {
+    clear: both;
     height: 500px;
     background-color: yellow; }
   .site-wrapper .dummy2 {
@@ -86,5 +88,57 @@ h3 {
   height: 70px;
   margin: 5px 0 15px 0;
   width: 70px; }
+
+.demo_projects {
+  margin: 0 auto;
+  width: 768px; }
+  .demo_projects .intersection h2 {
+    text-align: center;
+    color: #FF533D;
+    font-family: "Roboto";
+    font-size: 30px;
+    line-height: 30px;
+    margin: 30px 0; }
+  .demo_projects .project {
+    margin: 10px 0;
+    padding: 10px 0;
+    clear: both;
+    /*border-top: 1px solid rgb(180,180,180);*/ }
+    .demo_projects .project .screen {
+      float: left;
+      width: 68%;
+      height: 310px;
+      /*background-color: rgb(200,120,120);*/ }
+      .demo_projects .project .screen img {
+        /*margin: 10px;*/
+        -webkit-box-shadow: 0px 0px 6px 2px #8c8c8c;
+        -moz-box-shadow: 0px 0px 6px 2px #8c8c8c;
+        box-shadow: 0px 0px 6px 2px #8c8c8c; }
+    .demo_projects .project .desc {
+      box-sizing: border-box;
+      padding: 100px 5px;
+      float: left;
+      width: 32%;
+      height: 310px;
+      font-family: "Roboto";
+      font-size: 18px;
+      /*background-color: rgb(120,200,120);*/ }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* html .clearfix {
+  zoom: 1; }
+
+/* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1; }
+
+/* IE7 */
 
 /*# sourceMappingURL=style.css.map */

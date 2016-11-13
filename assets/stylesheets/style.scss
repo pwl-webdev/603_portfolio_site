@@ -9,6 +9,9 @@
 /*    Variables     */
 $header_height: 90px;
 $element_width: 768px;
+
+$screen_height: 310px;
+
 $coral: #FF533D;
 
 /*    Styling       */
@@ -52,7 +55,8 @@ $coral: #FF533D;
 		padding-top: $header_height;
 		z-index: 1;
 		background-image: url("../images/cov1_3r.jpg");
-		background-size: cover;
+		/*background-size: cover;*/
+		background-size: auto;
 		.hero_story{
 			width: $element_width;
 			margin: 0 auto;
@@ -61,6 +65,7 @@ $coral: #FF533D;
 		}
 	}
 	.dummy{
+		clear: both;
 		height: 500px;
 		background-color: yellow;
 	}
@@ -102,3 +107,56 @@ h3{
 	margin: 5px 0 15px 0;
 	width: 70px;
 }
+.demo_projects{
+	margin: 0 auto;
+	width: $element_width;
+	.intersection{
+		h2{
+			text-align: center;
+			color: $coral;
+			font-family: "Roboto";
+			font-size: 30px;
+			line-height: 30px;
+			margin: 30px 0;
+		}
+	}
+	.project{
+		margin: 10px 0;
+		padding: 10px 0;
+		clear: both;
+		/*border-top: 1px solid rgb(180,180,180);*/
+		.screen{
+			float: left;
+			width: 68%;
+			height: $screen_height;
+			/*background-color: rgb(200,120,120);*/
+			img{
+				/*margin: 10px;*/
+                -webkit-box-shadow: 0px 0px 6px 2px rgba(140,140,140,1);
+                -moz-box-shadow: 0px 0px 6px 2px rgba(140,140,140,1);
+                box-shadow: 0px 0px 6px 2px rgba(140,140,140,1);
+			}
+		}
+		.desc{
+			box-sizing: border-box;
+			padding: 100px 5px;
+			float: left;
+			width: 32%;
+			height: $screen_height;
+			font-family: "Roboto";
+			font-size: 18px;
+			/*background-color: rgb(120,200,120);*/
+		}
+	}
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
