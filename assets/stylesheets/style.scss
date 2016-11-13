@@ -1,10 +1,10 @@
 /*       Fonts      */
-@font-face {
+/*@font-face {
   font-family: 'Roboto Bold';
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-}
+}*/
 
 /*    Variables     */
 $header_height: 90px;
@@ -40,7 +40,8 @@ $element_width: 768px;
 				text-align: center;
 				padding: 0 30px;
 				font-size: 12px;
-				font-family: 'Roboto Bold';
+				/*font-family: 'Roboto Bold';*/
+				font-family: 'Roboto';
 				font-weight: 700;
 				box-sizing: border-box;
 			}
@@ -59,9 +60,29 @@ $element_width: 768px;
 		background-image: url("../images/cov1_3r.jpg");
 		background-size: cover;
 		/*background-position: 50% 50%;*/
+		.hero_story{
+			width: $element_width;
+			margin: 0 auto;
+			color: white;
+			font-family: 'Roboto';
+		}
 	}
 	.dummy{
 		height: 500px;
-		background-color: blue;
+		background-color: yellow;
 	}
+}
+
+h1{
+	margin: 60px 0 30px 0;
+	font-size: 46px;
+	line-height: 54px;
+	font-weight: 700;
+	/*color: #FF533D;*/
+}
+
+h3{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 400;
 }
