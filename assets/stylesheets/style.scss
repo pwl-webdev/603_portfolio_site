@@ -14,6 +14,16 @@ $screen_height: 310px;
 
 $coral: #FF533D;
 $eggshell: #F5F5F5;
+$small_text: #030303;
+
+$watermelon: #FF383F;
+$neutral: #EFEFEF;
+$carbon: #A9A9A9;
+$sky: #CAEBF2;
+$navy_blue: #OF1626;
+$indigo: #30415D;
+$ultramarine: #031424;
+$light_blue: #8EAEBD;
 
 /*    Styling       */
 .site-wrapper{
@@ -45,8 +55,8 @@ $eggshell: #F5F5F5;
 				box-sizing: border-box;
 			}
 			.anchor:hover{
-				border-bottom: 4px solid $coral;
-				color: $coral;
+				border-bottom: 4px solid $watermelon;
+				color: $watermelon;
 			}
 		}
 	}
@@ -65,15 +75,6 @@ $eggshell: #F5F5F5;
 			font-family: 'Roboto';
 		}
 	}
-	.dummy{
-		clear: both;
-		height: 500px;
-		background-color: yellow;
-	}
-	.dummy2{
-		height: 500px;
-		background-color: orange;
-	}
 }
 
 h1{
@@ -81,12 +82,14 @@ h1{
 	font-size: 55px;
 	line-height: 62px;
 	font-weight: 700;
+	color: $eggshell;
 }
 
 h3{
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 300;
+	color: $eggshell;
 }
 #logo, #name{
 	float: left;
@@ -111,16 +114,7 @@ h3{
 .demo_projects{
 	margin: 0 auto;
 	width: $element_width;
-	.intersection{
-		h2{
-			text-align: center;
-			color: $coral;
-			font-family: "Roboto";
-			font-size: 30px;
-			line-height: 30px;
-			margin: 30px 0;
-		}
-	}
+	color: $eggshell;
 	.project{
 		margin: 10px 0;
 		padding: 10px 0;
@@ -146,8 +140,40 @@ h3{
 			height: $screen_height;
 			font-family: "Roboto";
 			font-size: 18px;
+			color: $small_text;
 			/*background-color: rgb(120,200,120);*/
 		}
+	}
+}
+
+	.intersection{
+		h2{
+			text-align: center;
+			color: $watermelon;
+			font-family: "Roboto";
+			font-size: 30px;
+			line-height: 30px;
+			margin: 30px 0;
+		}
+	}
+
+
+.contact{
+	clear: both;
+	padding-bottom: 20px;
+	background-color: $neutral;
+	.container{
+		margin: 0 auto;
+		width: $element_width;
+		.sprites{
+			width: 110px;
+			margin: 0 auto;
+				img{
+					height: 32px;
+					width: 32px;
+					margin: 0 10px 10px 10px;
+				}				
+		}	
 	}
 }
 
