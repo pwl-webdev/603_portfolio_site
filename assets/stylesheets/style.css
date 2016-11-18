@@ -1,4 +1,5 @@
 /*    Variables     */
+/*    Colors      */
 /*    Styling       */
 .site-wrapper {
   width: 100%;
@@ -77,23 +78,23 @@ h3 {
   margin: 5px 0 15px 0;
   width: 70px; }
 
-.demo_projects {
+#demo_projects {
   margin: 0 auto;
   width: 768px;
   color: #F5F5F5; }
-  .demo_projects .project {
+  #demo_projects .project {
     margin: 10px 0;
     padding: 10px 0;
     clear: both; }
-    .demo_projects .project .screen {
+    #demo_projects .project .screen {
       float: left;
       width: 68%;
       height: 310px; }
-      .demo_projects .project .screen img {
+      #demo_projects .project .screen img {
         -webkit-box-shadow: 0px 0px 6px 2px #8c8c8c;
         -moz-box-shadow: 0px 0px 6px 2px #8c8c8c;
         box-shadow: 0px 0px 6px 2px #8c8c8c; }
-    .demo_projects .project .desc {
+    #demo_projects .project .desc {
       box-sizing: border-box;
       padding: 100px 5px;
       float: left;
@@ -111,17 +112,17 @@ h3 {
   line-height: 30px;
   margin: 30px 0; }
 
-.contact {
+#contact {
   clear: both;
   padding-bottom: 20px;
   background-color: #EFEFEF; }
-  .contact .container {
+  #contact .container {
     margin: 0 auto;
     width: 768px; }
-    .contact .container .sprites {
+    #contact .container .sprites {
       width: 110px;
       margin: 0 auto; }
-      .contact .container .sprites img {
+      #contact .container .sprites img {
         height: 32px;
         width: 32px;
         margin: 0 10px 10px 10px; }
@@ -145,6 +146,9 @@ h3 {
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
+
+.active {
+  border-bottom: 4px solid #FF383F; }
 
 .clearfix:after {
   visibility: hidden;

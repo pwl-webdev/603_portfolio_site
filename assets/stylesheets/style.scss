@@ -1,10 +1,9 @@
-
 /*    Variables     */
 $header_height: 90px;
 $element_width: 768px;
-
 $screen_height: 310px;
 
+/*    Colors      */
 $coral: #FF533D;
 $eggshell: #F5F5F5;
 $small_text: #030303;
@@ -104,7 +103,7 @@ h3{
 	margin: 5px 0 15px 0;
 	width: 70px;
 }
-.demo_projects{
+#demo_projects{
 	margin: 0 auto;
 	width: $element_width;
 	color: $eggshell;
@@ -146,7 +145,7 @@ h3{
 	}
 }
 
-.contact{
+#contact{
 	clear: both;
 	padding-bottom: 20px;
 	background-color: $neutral;
@@ -185,6 +184,10 @@ h3{
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
+}
+
+.active{
+	border-bottom: 4px solid $watermelon;
 }
 
 .clearfix:after {
