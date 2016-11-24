@@ -1,5 +1,6 @@
 /*    Variables     */
 $header_height: 90px;
+$space_large: 150px;
 $element_width: 768px;
 $screen_height: 310px;
 
@@ -23,9 +24,6 @@ $light_blue: #8EAEBD;
 	min-width: 600px;
 	position:relative;
 	header{
-		/*position: fixed;
-		top: 0;*/
-		position: absolute;
 		width: 100%;
 		height: $header_height;
 		z-index: 10;
@@ -36,7 +34,7 @@ $light_blue: #8EAEBD;
 			.anchor{
 				float: right;
 				height: 100%;
-				color: white;
+				/*color: white;*/
 				line-height: $header_height;
 				vertical-align: middle;
 				text-align: center;
@@ -53,8 +51,8 @@ $light_blue: #8EAEBD;
 		}
 	}
 	.hero{
-		height: 33%;
-		min-height: 600px + $header_height;
+		height: 600px + $header_height;
+		/*min-height: 600px + $header_height;*/
 		padding-top: $header_height;
 		z-index: 1;
 		background-image: url("../images/cov1_3r.jpg");
@@ -66,6 +64,29 @@ $light_blue: #8EAEBD;
 			color: white;
 			font-family: 'Roboto';
 		}
+	}
+}
+
+.header_static{
+	position: absolute;
+	.anchor{
+		color: white;
+	}
+	#name{
+		color: white;
+	}
+}
+
+.header_dynamic{
+	position: fixed;
+	top: 0;
+	background-color: white;
+	border-bottom: 1px solid $neutral;
+	.anchor{
+		color: $small_text;
+	}
+	#name{
+		color: $small_text;
 	}
 }
 
@@ -85,7 +106,6 @@ h3{
 }
 #logo, #name{
 	float: left;
-	color: white;
 	line-height: $header_height;
 	vertical-align: middle;
 	text-align: center;
@@ -106,7 +126,7 @@ h3{
 #demo_projects{
 	margin: 0 auto;
 	width: $element_width;
-	color: $eggshell;
+	/*background-color: $eggshell;*/
 	.project{
 		margin: 10px 0;
 		padding: 10px 0;
@@ -145,6 +165,10 @@ h3{
 	}
 }
 
+.space_large{
+	height: $space_large;
+}
+
 #contact{
 	clear: both;
 	padding-bottom: 20px;
@@ -165,8 +189,8 @@ h3{
 }
 
 .animated{
-	-webkit-animation-duration: 4s;
-    animation-duration: 4s;
+	-webkit-animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }

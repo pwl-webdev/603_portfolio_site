@@ -1,16 +1,9 @@
 $(document).ready(function () {
 	$(window).scroll(function(){
-	        var window_top = $(window).scrollTop() + 12;
-	       // the "12" should equal the margin-top value for nav.stickydiv
-	        var div_top = $('#checkdiv').offset().top;
-	        if (window_top >= div_top) {
-	                $('nav').addClass('stickydiv');
-	            } else {
-	                $('nav').removeClass('stickydiv');
-	            }
+	       var window_top = $(window).scrollTop();
+	       var window_bottom = $(window).scrollTop() + $(window).height();
+	       adjustStyling();
 	    }); 
-	 
-	$(document).on("scroll", onScroll);
 	 
 	$('a[href^="#"]').on('click', function (e) {
 	      e.preventDefault();
@@ -23,16 +16,22 @@ $(document).ready(function () {
 	         menu = target;
 	         $target = $(target);
   	       $('html, body').stop().animate({
-	            'scrollTop': $target.offset().top+2
+	            'scrollTop': $target.offset().top
 	        }, 600, 'swing', function () {
+	        	//console.log("trigger onscroll");
 	            window.location.hash = target;
-	            $(document).on("scroll", onScroll);
+	            //$(document).on("scroll", onScroll);
+	            //$(window).scroll();
+	            adjustStyling();
+	            
 	        });
 	});
 });
-	 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
+
+function adjustStyling(){
+	var scrollPos = $(document).scrollTop();
+    var hero_height = parseInt($(".hero").css("height"),10);
+
     $('nav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
@@ -44,4 +43,17 @@ function onScroll(event){
             currLink.children('div').removeClass("active");
         }
     });
+
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+    	$('nav a div').removeClass("active");
+    	$('.b_contact').addClass("active");
+   }
+
+   if($(window).scrollTop() >= hero_height){
+   		$('header').removeClass('header_static');
+   		$('header').addClass('header_dynamic');
+   } else {
+   		$('header').removeClass('header_dynamic');
+   		$('header').addClass('header_static');
+   }
 }
