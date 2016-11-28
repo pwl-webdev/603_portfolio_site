@@ -3,7 +3,7 @@
 /*    Styling       */
 .site-wrapper {
   width: 100%;
-  min-width: 560px;
+  min-width: 775px;
   position: relative; }
   .site-wrapper header {
     width: 100%;
@@ -11,6 +11,7 @@
     z-index: 10; }
     .site-wrapper header .header_container {
       max-width: 768px;
+      min-width: 775px;
       width: 90%;
       margin: 0 auto;
       height: 100%; }
@@ -32,6 +33,7 @@
   .site-wrapper .hero {
     height: 690px;
     /*min-height: 600px + $header_height;*/
+    min-width: 775px;
     padding-top: 90px;
     z-index: 1;
     background-image: url("../images/cov1_3r.jpg");

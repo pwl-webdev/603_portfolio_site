@@ -21,7 +21,7 @@ $light_blue: #8EAEBD;
 /*    Styling       */
 .site-wrapper{
 	width: 100%;
-	min-width: 560px;
+	min-width: 775px;
 	position:relative;
 	header{
 		width: 100%;
@@ -29,6 +29,7 @@ $light_blue: #8EAEBD;
 		z-index: 10;
 		.header_container{
 			max-width: $element_width;
+			min-width: 775px;
 			width: 90%;
 			margin: 0 auto;
 			height: 100%;
@@ -54,6 +55,7 @@ $light_blue: #8EAEBD;
 	.hero{
 		height: 600px + $header_height;
 		/*min-height: 600px + $header_height;*/
+		min-width: 775px;
 		padding-top: $header_height;
 		z-index: 1;
 		background-image: url("../images/cov1_3r.jpg");
