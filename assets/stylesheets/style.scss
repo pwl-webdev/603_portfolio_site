@@ -21,14 +21,15 @@ $light_blue: #8EAEBD;
 /*    Styling       */
 .site-wrapper{
 	width: 100%;
-	min-width: 600px;
+	min-width: 560px;
 	position:relative;
 	header{
 		width: 100%;
 		height: $header_height;
 		z-index: 10;
 		.header_container{
-			width: $element_width;
+			max-width: $element_width;
+			width: 90%;
 			margin: 0 auto;
 			height: 100%;
 			.anchor{
@@ -57,9 +58,10 @@ $light_blue: #8EAEBD;
 		z-index: 1;
 		background-image: url("../images/cov1_3r.jpg");
 		/*background-size: cover;*/
-		background-size: auto;
+		background-size: cover;
 		.hero_story{
-			width: $element_width;
+			max-width: $element_width;
+			width: 90%;
 			margin: 0 auto;
 			color: white;
 			font-family: 'Roboto';
@@ -125,7 +127,8 @@ h3{
 }
 #demo_projects{
 	margin: 0 auto;
-	width: $element_width;
+	max-width: $element_width;
+	width: 100%;
 	/*background-color: $eggshell;*/
 	.project{
 		margin: 10px 0;
@@ -187,6 +190,38 @@ h3{
 		}	
 	}
 }
+/*    Media Query    */
+@media (max-width: 800px){
+	#demo_projects{
+		.project{
+			.screen{
+				width: 100%;
+				display: block;
+				float: none;
+				text-align: center;
+			}
+			.desc{
+				width: 100%;
+				display: block;
+				float: none;
+				text-align: center;
+				height: auto;
+				padding: 0 0 20px 0;
+			}
+		}
+	}
+	.site-wrapper{
+		header{
+			.header_container{
+				.anchor{
+					padding: 0 15px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+/*    Animations    */
 
 .animated{
 	-webkit-animation-duration: 2s;
@@ -213,6 +248,8 @@ h3{
 .active{
 	border-bottom: 4px solid $watermelon;
 }
+
+/*          Clearfix           */
 
 .clearfix:after {
 	visibility: hidden;
